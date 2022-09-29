@@ -7,4 +7,5 @@ from acesso_cep import BuscaEndereco
 cep = "02461000"
 objeto_cep = BuscaEndereco(cep)
 #print(objeto_cep)
-objeto_cep.acessa_via_cep()
+bairro, cidade, uf = objeto_cep.acessa_via_cep()
+print(f'bairro: {bairro}, cidade: {cidade}, uf: {uf}')
